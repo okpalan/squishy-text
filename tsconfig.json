@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "noEmit": false,
+        "module": "ESNext",
+        "target": "ESNext",
+        "moduleResolution": "bundler",
+        "experimentalDecorators": true,
+        "allowJs": true,
+        "outDir": "dist",
+        "lib": [
+            "ES2015",
+            "DOM",
+            "ES2017",
+            "DOM.Iterable"
+        ],
+        "rootDir": "src",
+        "typeRoots": [
+            "src/@types"
+        ],
+        "strict": true,
+        "downlevelIteration": true,
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ],
+    "include": [
+        "src/**/*"
+    ]
+}
