@@ -11,7 +11,7 @@
     "steal:reload": "steal-tools live-reload",
     "steal:export": "steal-tools export   --global --no-tree-shaking --dest build",
     "start": "http-server  --cors -c-1",
-    "dev": "concurrently \"pnpm serve\" \"pnpm steal:reload\""
+    "dev": "concurrently \"yarn serve\" \"yarn steal:reload\""
   },
   "steal": {
     "baseURL": "./",
