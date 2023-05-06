@@ -10,7 +10,7 @@
     "build": "tsc -P tsconfig.browser.json",
     "steal:reload": "steal-tools live-reload",
     "steal:export": "steal-tools export   --global --no-tree-shaking --dest build",
-    "serve": "http-server  --cors -c-1",
+    "start": "http-server  --cors -c-1",
     "dev": "concurrently \"pnpm serve\" \"pnpm steal:reload\""
   },
   "steal": {
