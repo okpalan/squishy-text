@@ -1,4 +1,7 @@
 {
+    "files": [
+        "src/@types/global.d"
+    ],
     "compilerOptions": {
         "noEmit": false,
         "module": "ESNext",
@@ -15,7 +18,8 @@
         ],
         "rootDir": "src",
         "typeRoots": [
-            "src/@types"
+            "src/@types/",
+            "sec/@types/**"
         ],
         "strict": true,
         "downlevelIteration": true,

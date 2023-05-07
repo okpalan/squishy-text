@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "main": "src/main.ts",
   "type": "module",
+  "engines": {
+    "node": "<=14"
+  },
   "scripts": {
     "purge": "rimraf ./node_modules",
     "steal:build": "steal-tools build --target web optimize  --no-tree-shaking",
@@ -11,7 +14,7 @@
     "steal:reload": "steal-tools live-reload",
     "steal:export": "steal-tools export   --global --no-tree-shaking --dest build",
     "start": "http-server  --cors -c-1",
-    "dev": "concurrently \"yarn serve\" \"yarn steal:reload\""
+    "dev": "concurrently \"yarn start\" \"yarn steal:reload\""
   },
   "steal": {
     "baseURL": "./",

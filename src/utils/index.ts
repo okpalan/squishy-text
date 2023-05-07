@@ -1,1 +1,2 @@
-export { TextEffects } from "./text-effects"
+export { TextEffects } from "./text-effects";
+export * from "./polyfills";

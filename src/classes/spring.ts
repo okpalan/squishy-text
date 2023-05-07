@@ -1,6 +1,5 @@
 import { IParticle } from "../@types/classes/particle";
 import { ISpring, ISpringConstructor, ISpringOptions } from "../@types/classes/spring";
-import { } from "../utils/index"
 
 export const Spring = function <T extends ISpring>(this: T, nodes: IParticle[], options: ISpringOptions) {
     this.nodes = nodes;
@@ -20,7 +19,5 @@ Object.defineProperty(Spring.prototype, "forceSustained", {
 
 Spring.prototype.draw = function (ctx: CanvasRenderingContext2D) {
     const [particleA, particleB] = this.nodes;
-    const temp = {};
-
 
 }
